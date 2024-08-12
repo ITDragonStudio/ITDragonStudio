@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <title>ITDragonStudio</title>
+    <meta charset="utf-8">
+    <link rel = "icon" href="d01.jpg">
+    <link rel = "stylesheet" href = "StyleDragon.css">
+    <script>
+	  var seconds = 0;
+    var minuts = 0;
+    var hour = 0;
+    var days = 5;
+	  function timer(){
+	  seconds = seconds - 1;
+	   document.getElementById("seconds").innerHTML = seconds;
+     document.getElementById("minuts").innerHTML = minuts;
+     document.getElementById("hour").innerHTML = hour;
+     document.getElementById("days").innerHTML = days;
+     if (seconds <= 0) {
+       seconds = 60;
+       minuts = minuts - 1;
+     }
+     if (minuts <= 0) {
+       minuts = 60;
+       hour = hour - 1;
+     }
+     if (hour <= 0) {
+       hour = 24;
+       days = days - 1;
+     }
+     if (days == 0) {
+       var del = document.querySelector('#tab')
+       if (del){
+         del.remove()
+       }
+     }
+	  }
+	  setInterval(timer, 1000);
+	</script>
+  </head>
+  <body>
+    <table style = "width: 100%;" bgcolor = "lightblue">
+      <div class = "shapca">
+          <tr>
+            <th><h1 class = "shapca"><a href = "https://www.youtube.com/watch?v=qaSnzjilW2Q" target="_blank">Promo</a></h1></th>
+            <th><h1 class = "shapca">Menu</h1></th>
+            <th><h1 class = "shapca"><a href="https://www.youtube.com/watch?v=qaSnzjilW2Q">Accaunt</a></h1></th>
+          </tr>
+        </div>
+      </div>
+    </table>
+    <h1 class = "big-red">Warning</h1>
+    <table class = "tab" style = "width: 100%;">
+      <thead>
+        <tr>
+          <th><h2 class = "bigLetters">Розігриш на <a class="h1">3</a> презентації <a class="h1">free</a> <br> <a href="https://t.me/ITDragonStudio"> link for TG </a>  <br>Hurry up</h2></th>
+          <th>
+            <img src = "Wos.jfif" style="width: 250px; float: left;">
+          </th>
+        </tr>
+      </thead>
+    </table>
+    <center>
+      <table class = "antiTable" id = "tab">
+        <thead>
+          <tr>
+            <th id="days"><h1>0</h1></th>
+            <th><h1>/</h1></th>
+            <th id="hour"><h1>0</h1></th>
+            <th><h1>/</h1></th>
+            <th id="minuts"><h1>0</h1></th>
+            <th><h1>/</h1></th>
+            <th id="seconds"><h1>0</h1></th>
+          </tr>
+        </thead>
+      </table>
+      <h1 style = "font-size: 50px;">Why you can do it?</h1>
+    </center>
+    <table class = "tab" style = "width: 100%;">
+      <thead>
+        <tr>
+          <th>
+            <img src = "https://i.pinimg.com/736x/50/60/43/5060435eb2a9d398d25dc96a3926c0a7.jpg" style="width: 250px; float: left;;">
+          </th>
+          <th>
+            <h2>По-перше, чому нам можно довіряти?</h2>
+          </th>
+        </tr>
+        <tr>
+          <th>
+              <h2>По-друге,лалдкдкдкдлптоілооаьдплпоопопопополаоипьортбіпеобме</h2>
+          </th>
+          <th>
+            <img src = "https://cs4.pikabu.ru/post_img/2014/09/24/4/1411532605_78416275.jpg" style="width: 250px; float: right;">
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <img src = "https://sotni.ru/wp-content/uploads/2023/08/udivlennyi-kot-9.webp" style="width: 250px; float: left;">
+          </th>
+          <th>
+            <h2>По-трете,лалдкдкдкдлптоілооаьдплпоопопопополаоипьортбіпеобме</h2>
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+</html>
